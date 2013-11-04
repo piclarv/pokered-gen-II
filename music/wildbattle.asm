@@ -428,7 +428,6 @@ Music_WildBattle_Ch2_branch_3:
 	octave 3
 	note C_, 2
 	loopchannel 2, Music_WildBattle_Ch2_branch_3
-
 	callchannel Music_WildBattle_Ch2_branch_5
 	note C_, 2
 	rest 2
@@ -955,7 +954,6 @@ Music_WildBattle_Ch3_branch_1:
 	note F_, 4
 	note G#, 16
 	notetype 6, 1, 4
-	octave 5
 	note G#, 1
 	rest 1
 	notetype 6, 2, 4

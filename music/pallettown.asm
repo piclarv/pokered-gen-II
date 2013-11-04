@@ -1,7 +1,7 @@
 Music_PalletTown_Ch1:
 	tempo 0, 188
-	vibrato 18, 2, 4
 	stereopanning 119
+	vibrato 18, 2, 4
 
 Music_PalletTown_Ch1_branch_1:
 	duty 2
