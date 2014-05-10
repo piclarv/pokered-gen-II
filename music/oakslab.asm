@@ -1,4 +1,4 @@
-Music_OaksLab_Ch1:
+Music_OaksLab_Ch1::
 	tempo 0, 164
 	stereopanning 119
 	vibrato 6, 2, 5
@@ -16,7 +16,7 @@ Music_OaksLab_Ch1:
 	note E_, 1
 	note F#, 1
 
-Music_OaksLab_Ch1_branch_1:
+Music_OaksLab_Ch1_branch_1::
 	note D#, 6
 	note C#, 1
 	octave 3
@@ -125,7 +125,7 @@ Music_OaksLab_Ch1_branch_1:
 	rest 1
 	loopchannel 0, Music_OaksLab_Ch1_branch_1
 
-Music_OaksLab_Ch2:
+Music_OaksLab_Ch2::
 	vibrato 8, 2, 4
 	duty 3
 	notetype 12, 10, 7
@@ -148,7 +148,7 @@ Music_OaksLab_Ch2:
 	note G#, 1
 	note A#, 1
 
-Music_OaksLab_Ch2_branch_1:
+Music_OaksLab_Ch2_branch_1::
 	note B_, 6
 	note A#, 1
 	note G#, 1
@@ -200,7 +200,7 @@ Music_OaksLab_Ch2_branch_1:
 	rest 1
 	loopchannel 0, Music_OaksLab_Ch2_branch_1
 
-Music_OaksLab_Ch3:
+Music_OaksLab_Ch3::
 	vibrato 6, 3, 8
 	notetype 12, 2, 6
 	rest 8
@@ -215,7 +215,7 @@ Music_OaksLab_Ch3:
 	octave 2
 	note A#, 1
 
-Music_OaksLab_Ch3_branch_1:
+Music_OaksLab_Ch3_branch_1::
 	note B_, 6
 	octave 3
 	note D#, 1

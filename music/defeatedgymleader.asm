@@ -1,4 +1,4 @@
-Music_DefeatedGymLeader_Ch1:
+Music_DefeatedGymLeader_Ch1::
 	tempo 0, 116
 	stereopanning 119
 	vibrato 18, 3, 4
@@ -19,7 +19,7 @@ Music_DefeatedGymLeader_Ch1:
 	octave 5
 	note D_, 8
 
-Music_DefeatedGymLeader_Ch1_branch_1:
+Music_DefeatedGymLeader_Ch1_branch_1::
 	duty 1
 	callchannel Music_DefeatedGymLeader_Ch1_branch_2
 	octave 4
@@ -52,7 +52,7 @@ Music_DefeatedGymLeader_Ch1_branch_1:
 	note F#, 16
 	loopchannel 0, Music_DefeatedGymLeader_Ch1_branch_1
 
-Music_DefeatedGymLeader_Ch1_branch_2:
+Music_DefeatedGymLeader_Ch1_branch_2::
 	notetype 12, 9, 1
 	octave 3
 	note F#, 2
@@ -76,7 +76,7 @@ Music_DefeatedGymLeader_Ch1_branch_2:
 	note D_, 1
 	endchannel
 
-Music_DefeatedGymLeader_Ch1_branch_3:
+Music_DefeatedGymLeader_Ch1_branch_3::
 	notetype 12, 8, 7
 	octave 3
 	note F#, 14
@@ -107,7 +107,7 @@ Music_DefeatedGymLeader_Ch1_branch_3:
 	endchannel
 
 
-Music_DefeatedGymLeader_Ch2:
+Music_DefeatedGymLeader_Ch2::
 	vibrato 18, 3, 4
 	duty 3
 	notetype 12, 13, 7
@@ -123,7 +123,7 @@ Music_DefeatedGymLeader_Ch2:
 	note D_, 1
 	note F#, 16
 
-Music_DefeatedGymLeader_Ch2_branch_1:
+Music_DefeatedGymLeader_Ch2_branch_1::
 	duty 3
 	notetype 12, 10, 1
 	callchannel Music_DefeatedGymLeader_Ch2_branch_2
@@ -167,7 +167,7 @@ Music_DefeatedGymLeader_Ch2_branch_1:
 	note C#, 1
 	loopchannel 0, Music_DefeatedGymLeader_Ch2_branch_1
 
-Music_DefeatedGymLeader_Ch2_branch_2:
+Music_DefeatedGymLeader_Ch2_branch_2::
 	octave 5
 	note D_, 2
 	note C#, 2
@@ -184,7 +184,7 @@ Music_DefeatedGymLeader_Ch2_branch_2:
 	note F#, 2
 	endchannel
 
-Music_DefeatedGymLeader_Ch2_branch_3:
+Music_DefeatedGymLeader_Ch2_branch_3::
 	notetype 12, 9, 8
 	note A_, 6
 	note F#, 1
@@ -209,7 +209,7 @@ Music_DefeatedGymLeader_Ch2_branch_3:
 	endchannel
 
 
-Music_DefeatedGymLeader_Ch3:
+Music_DefeatedGymLeader_Ch3::
 	notetype 12, 2, 6
 	octave 3
 	note F#, 16
@@ -220,7 +220,7 @@ Music_DefeatedGymLeader_Ch3:
 	octave 3
 	note C#, 2
 
-Music_DefeatedGymLeader_Ch3_branch_1:
+Music_DefeatedGymLeader_Ch3_branch_1::
 	note D_, 2
 	rest 4
 	octave 2
@@ -302,7 +302,7 @@ Music_DefeatedGymLeader_Ch3_branch_1:
 	note C#, 2
 	loopchannel 0, Music_DefeatedGymLeader_Ch3_branch_1
 
-Music_DefeatedGymLeader_Ch3_branch_2:
+Music_DefeatedGymLeader_Ch3_branch_2::
 	octave 3
 	note D_, 2
 	rest 2

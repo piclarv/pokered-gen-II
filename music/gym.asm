@@ -1,11 +1,11 @@
-Music_Gym_Ch1:
+Music_Gym_Ch1::
 	tempo 0, 156
 	stereopanning 119
 	vibrato 18, 2, 4
 	duty 1
 	notetype 12, 11, 7
 
-Music_Gym_Ch1_branch_1:
+Music_Gym_Ch1_branch_1::
 	octave 4
 	note F#, 2
 	octave 2
@@ -183,10 +183,10 @@ Music_Gym_Ch1_branch_1:
 	note E_, 1
 	loopchannel 0, Music_Gym_Ch1_branch_1
 
-Music_Gym_Ch2:
+Music_Gym_Ch2::
 	duty 1
 
-Music_Gym_Ch2_branch_1:
+Music_Gym_Ch2_branch_1::
 	notetype 12, 12, 3
 	octave 2
 	note D_, 2
@@ -279,7 +279,7 @@ Music_Gym_Ch2_branch_1:
 	note D_, 2
 	loopchannel 0, Music_Gym_Ch2_branch_1
 
-Music_Gym_Ch2_branch_2:
+Music_Gym_Ch2_branch_2::
 	octave 3
 	note D_, 3
 	octave 2
@@ -325,7 +325,7 @@ Music_Gym_Ch2_branch_2:
 	note C_, 2
 	endchannel
 
-Music_Gym_Ch2_branch_3:
+Music_Gym_Ch2_branch_3::
 	octave 2
 	note D_, 4
 	note D_, 2
@@ -361,10 +361,10 @@ Music_Gym_Ch2_branch_3:
 	note F#, 1
 	endchannel
 
-Music_Gym_Ch3:
+Music_Gym_Ch3::
 	vibrato 20, 2, 3
 
-Music_Gym_Ch3_branch_1:
+Music_Gym_Ch3_branch_1::
 	notetype 12, 1, 4
 	octave 6
 	note D_, 2
@@ -475,7 +475,7 @@ Music_Gym_Ch3_branch_1:
 	note E_, 4
 	loopchannel 0, Music_Gym_Ch3_branch_1
 
-Music_Gym_Ch3_branch_2:
+Music_Gym_Ch3_branch_2::
 	octave 5
 	note A_, 6
 	octave 6

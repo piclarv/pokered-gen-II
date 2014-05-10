@@ -1,4 +1,4 @@
-Music_GymLeaderBattle_Ch1:
+Music_GymLeaderBattle_Ch1::
 	tempo 0, 101
 	stereopanning 119
 	duty 3
@@ -80,7 +80,7 @@ Music_GymLeaderBattle_Ch1:
 	note E_, 4
 	note E_, 2
 
-Music_GymLeaderBattle_Ch1_branch_1:
+Music_GymLeaderBattle_Ch1_branch_1::
 	callchannel Music_GymLeaderBattle_Ch1_branch_2
 	octave 2
 	note A#, 2
@@ -224,7 +224,7 @@ Music_GymLeaderBattle_Ch1_branch_1:
 	note D_, 4
 	loopchannel 0, Music_GymLeaderBattle_Ch1_branch_1
 
-Music_GymLeaderBattle_Ch1_branch_2:
+Music_GymLeaderBattle_Ch1_branch_2::
 	notetype 12, 11, 5
 	note D#, 2
 	octave 2
@@ -247,12 +247,12 @@ Music_GymLeaderBattle_Ch1_branch_2:
 	endchannel
 
 
-Music_GymLeaderBattle_Ch2:
+Music_GymLeaderBattle_Ch2::
 	duty 3
 	vibrato 8, 3, 6
 	notetype 12, 12, 2
 
-Music_GymLeaderBattle_Ch2_branch_1:
+Music_GymLeaderBattle_Ch2_branch_1::
 	octave 4
 	note A#, 1
 	note G#, 1
@@ -262,7 +262,7 @@ Music_GymLeaderBattle_Ch2_branch_1:
 	loopchannel 8, Music_GymLeaderBattle_Ch2_branch_1
 	octave 3
 
-Music_GymLeaderBattle_Ch2_branch_2:
+Music_GymLeaderBattle_Ch2_branch_2::
 	notetype 12, 12, 2
 	note D#, 2
 	note D#, 2
@@ -311,7 +311,7 @@ Music_GymLeaderBattle_Ch2_branch_2:
 	octave 4
 	loopchannel 2, Music_GymLeaderBattle_Ch2_branch_2
 
-Music_GymLeaderBattle_Ch2_branch_3:
+Music_GymLeaderBattle_Ch2_branch_3::
 	callchannel Music_GymLeaderBattle_Ch2_branch_4
 	note E_, 8
 	note G#, 8
@@ -401,7 +401,7 @@ Music_GymLeaderBattle_Ch2_branch_3:
 	note A_, 4
 	loopchannel 0, Music_GymLeaderBattle_Ch2_branch_3
 
-Music_GymLeaderBattle_Ch2_branch_4:
+Music_GymLeaderBattle_Ch2_branch_4::
 	duty 2
 	notetype 12, 13, 1
 	octave 3
@@ -433,13 +433,13 @@ Music_GymLeaderBattle_Ch2_branch_4:
 	endchannel
 
 
-Music_GymLeaderBattle_Ch3:
+Music_GymLeaderBattle_Ch3::
 	notetype 12, 1, 8
 	octave 2
 	note E_, 1
 	rest 1
 
-Music_GymLeaderBattle_Ch3_branch_1:
+Music_GymLeaderBattle_Ch3_branch_1::
 	note B_, 3
 	rest 1
 	loopchannel 6, Music_GymLeaderBattle_Ch3_branch_1
@@ -447,7 +447,7 @@ Music_GymLeaderBattle_Ch3_branch_1:
 	note G#, 2
 	note B_, 2
 
-Music_GymLeaderBattle_Ch3_branch_2:
+Music_GymLeaderBattle_Ch3_branch_2::
 	note D#, 1
 	rest 1
 	note D#, 1
@@ -486,13 +486,13 @@ Music_GymLeaderBattle_Ch3_branch_2:
 	note E_, 2
 	loopchannel 2, Music_GymLeaderBattle_Ch3_branch_2
 
-Music_GymLeaderBattle_Ch3_branch_3:
+Music_GymLeaderBattle_Ch3_branch_3::
 	octave 2
 	note D#, 2
 	note A#, 2
 	loopchannel 8, Music_GymLeaderBattle_Ch3_branch_3
 
-Music_GymLeaderBattle_Ch3_branch_4:
+Music_GymLeaderBattle_Ch3_branch_4::
 	note E_, 2
 	note B_, 2
 	loopchannel 4, Music_GymLeaderBattle_Ch3_branch_4
@@ -510,14 +510,14 @@ Music_GymLeaderBattle_Ch3_branch_4:
 	octave 2
 	note B_, 2
 
-Music_GymLeaderBattle_Ch3_branch_5:
+Music_GymLeaderBattle_Ch3_branch_5::
 	octave 2
 	note F#, 2
 	octave 3
 	note C#, 2
 	loopchannel 8, Music_GymLeaderBattle_Ch3_branch_5
 
-Music_GymLeaderBattle_Ch3_branch_6:
+Music_GymLeaderBattle_Ch3_branch_6::
 	octave 2
 	note E_, 2
 	note B_, 2
@@ -527,7 +527,7 @@ Music_GymLeaderBattle_Ch3_branch_6:
 	octave 2
 	note B_, 2
 
-Music_GymLeaderBattle_Ch3_branch_7:
+Music_GymLeaderBattle_Ch3_branch_7::
 	note D#, 1
 	rest 1
 	note D#, 1
@@ -548,7 +548,7 @@ Music_GymLeaderBattle_Ch3_branch_7:
 	note E_, 2
 	loopchannel 2, Music_GymLeaderBattle_Ch3_branch_7
 
-Music_GymLeaderBattle_Ch3_branch_8:
+Music_GymLeaderBattle_Ch3_branch_8::
 	note D#, 2
 	note A#, 2
 	loopchannel 7, Music_GymLeaderBattle_Ch3_branch_8
@@ -566,13 +566,13 @@ Music_GymLeaderBattle_Ch3_branch_8:
 	octave 3
 	note E_, 2
 
-Music_GymLeaderBattle_Ch3_branch_9:
+Music_GymLeaderBattle_Ch3_branch_9::
 	octave 2
 	note E_, 2
 	note B_, 2
 	loopchannel 5, Music_GymLeaderBattle_Ch3_branch_9
 
-Music_GymLeaderBattle_Ch3_branch_10:
+Music_GymLeaderBattle_Ch3_branch_10::
 	octave 2
 	note F#, 2
 	octave 3
@@ -593,18 +593,18 @@ Music_GymLeaderBattle_Ch3_branch_10:
 	note E_, 2
 	note C#, 2
 
-Music_GymLeaderBattle_Ch3_branch_11:
+Music_GymLeaderBattle_Ch3_branch_11::
 	octave 2
 	note D#, 2
 	note A#, 2
 	loopchannel 4, Music_GymLeaderBattle_Ch3_branch_11
 
-Music_GymLeaderBattle_Ch3_branch_12:
+Music_GymLeaderBattle_Ch3_branch_12::
 	note C#, 2
 	note G#, 2
 	loopchannel 8, Music_GymLeaderBattle_Ch3_branch_12
 
-Music_GymLeaderBattle_Ch3_branch_13:
+Music_GymLeaderBattle_Ch3_branch_13::
 	note D#, 2
 	note A#, 2
 	loopchannel 4, Music_GymLeaderBattle_Ch3_branch_13

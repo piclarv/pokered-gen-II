@@ -1,9 +1,9 @@
-Music_PalletTown_Ch1:
+Music_PalletTown_Ch1::
 	tempo 0, 188
 	stereopanning 119
 	vibrato 18, 2, 4
 
-Music_PalletTown_Ch1_branch_1:
+Music_PalletTown_Ch1_branch_1::
 	duty 2
 	notetype 12, 7, 8
 	octave 3
@@ -54,7 +54,7 @@ Music_PalletTown_Ch1_branch_1:
 	notetype 12, 7, 7
 	note B_, 8
 
-Music_PalletTown_Ch1_branch_2:
+Music_PalletTown_Ch1_branch_2::
 	duty 3
 	notetype 12, 9, 2
 	note G_, 2
@@ -114,11 +114,11 @@ Music_PalletTown_Ch1_branch_2:
 	loopchannel 0, Music_PalletTown_Ch1_branch_1
 
 
-Music_PalletTown_Ch2:
+Music_PalletTown_Ch2::
 	vibrato 18, 4, 4
 	duty 2
 
-Music_PalletTown_Ch2_branch_1:
+Music_PalletTown_Ch2_branch_1::
 	notetype 12, 8, 8
 	octave 1
 	note G_, 2
@@ -179,7 +179,7 @@ Music_PalletTown_Ch2_branch_1:
 	note C_, 2
 	note D_, 2
 
-Music_PalletTown_Ch2_branch_2:
+Music_PalletTown_Ch2_branch_2::
 	notetype 12, 10, 2
 	octave 3
 	note E_, 2
@@ -241,10 +241,10 @@ Music_PalletTown_Ch2_branch_2:
 	loopchannel 0, Music_PalletTown_Ch2_branch_1
 
 
-Music_PalletTown_Ch3:
+Music_PalletTown_Ch3::
 	vibrato 20, 2, 4
 
-Music_PalletTown_Ch3_branch_1:
+Music_PalletTown_Ch3_branch_1::
 	notetype 12, 1, 0
 	octave 6
 	note D_, 2

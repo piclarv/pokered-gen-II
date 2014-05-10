@@ -1,4 +1,4 @@
-Music_Routes1_Ch1:
+Music_Routes1_Ch1::
 	tempo 0, 184
 	stereopanning 119
 	vibrato 22, 1, 1
@@ -52,7 +52,7 @@ Music_Routes1_Ch1:
 	notetype 12, 8, 3
 	rest 2
 
-Music_Routes1_Ch1_branch_1:
+Music_Routes1_Ch1_branch_1::
 	notetype 12, 8, 3
 	rest 2
 	octave 4
@@ -197,7 +197,7 @@ Music_Routes1_Ch1_branch_1:
 	loopchannel 0, Music_Routes1_Ch1_branch_1
 
 
-Music_Routes1_Ch2:
+Music_Routes1_Ch2::
 	vibrato 18, 2, 2
 	duty 2
 	notetype 12, 9, 2
@@ -224,7 +224,7 @@ Music_Routes1_Ch2:
 	note E_, 1
 	duty 2
 
-Music_Routes1_Ch2_branch_1:
+Music_Routes1_Ch2_branch_1::
 	notetype 12, 8, 2
 	callchannel Music_Routes1_Ch2_branch_2
 	notetype 12, 8, 1
@@ -316,7 +316,7 @@ Music_Routes1_Ch2_branch_1:
 	note E_, 1
 	loopchannel 0, Music_Routes1_Ch2_branch_1
 
-Music_Routes1_Ch2_branch_2:
+Music_Routes1_Ch2_branch_2::
 	note F#, 2
 	note F#, 2
 	note F#, 2
@@ -334,7 +334,7 @@ Music_Routes1_Ch2_branch_2:
 	note E_, 2
 	endchannel
 
-Music_Routes1_Ch2_branch_3:
+Music_Routes1_Ch2_branch_3::
 	note A_, 2
 	note A_, 2
 	note F#, 2
@@ -354,7 +354,7 @@ Music_Routes1_Ch2_branch_3:
 	note E_, 2
 	endchannel
 
-Music_Routes1_Ch2_branch_4:
+Music_Routes1_Ch2_branch_4::
 	note A_, 2
 	note A_, 2
 	note F#, 2
@@ -371,7 +371,7 @@ Music_Routes1_Ch2_branch_4:
 	endchannel
 
 
-Music_Routes1_Ch3:
+Music_Routes1_Ch3::
 	vibrato 16, 2, 3
 	notetype 12, 2, 6
 	rest 2
@@ -451,7 +451,7 @@ Music_Routes1_Ch3:
 	note A_, 1
 	rest 3
 
-Music_Routes1_Ch3_branch_1:
+Music_Routes1_Ch3_branch_1::
 	octave 3
 	note D_, 1
 	rest 1
@@ -641,5 +641,5 @@ Music_Routes1_Ch3_branch_1:
 	loopchannel 0, Music_Routes1_Ch3_branch_1
 
 
-Music_Routes1_Ch4:
+Music_Routes1_Ch4::
 	endchannel

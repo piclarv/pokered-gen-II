@@ -1,4 +1,4 @@
-Music_DefeatedWildMon_Ch1:
+Music_DefeatedWildMon_Ch1::
 	tempo 0, 126
 	stereopanning 119
 	duty 3
@@ -11,7 +11,7 @@ Music_DefeatedWildMon_Ch1:
 	notetype 12, 11, 6
 	note E_, 12
 
-Music_DefeatedWildMon_Ch1_branch_1:
+Music_DefeatedWildMon_Ch1_branch_1::
 	callchannel Music_DefeatedWildMon_Ch1_branch_2
 	note F#, 2
 	note F#, 2
@@ -32,7 +32,7 @@ Music_DefeatedWildMon_Ch1_branch_1:
 	note F#, 4
 	loopchannel 0, Music_DefeatedWildMon_Ch1_branch_1
 
-Music_DefeatedWildMon_Ch1_branch_2:
+Music_DefeatedWildMon_Ch1_branch_2::
 	notetype 12, 7, 1
 	octave 3
 	note G#, 1
@@ -59,7 +59,7 @@ Music_DefeatedWildMon_Ch1_branch_2:
 	endchannel
 
 
-Music_DefeatedWildMon_Ch2:
+Music_DefeatedWildMon_Ch2::
 	vibrato 18, 2, 4
 	duty 2
 	notetype 12, 13, 1
@@ -71,7 +71,7 @@ Music_DefeatedWildMon_Ch2:
 	notetype 12, 13, 6
 	note B_, 12
 
-Music_DefeatedWildMon_Ch2_branch_1:
+Music_DefeatedWildMon_Ch2_branch_1::
 	callchannel Music_DefeatedWildMon_Ch2_branch_2
 	octave 4
 	note B_, 2
@@ -102,7 +102,7 @@ Music_DefeatedWildMon_Ch2_branch_1:
 	note A_, 1
 	loopchannel 0, Music_DefeatedWildMon_Ch2_branch_1
 
-Music_DefeatedWildMon_Ch2_branch_2:
+Music_DefeatedWildMon_Ch2_branch_2::
 	notetype 12, 8, 1
 	octave 4
 	note B_, 2
@@ -119,7 +119,7 @@ Music_DefeatedWildMon_Ch2_branch_2:
 	endchannel
 
 
-Music_DefeatedWildMon_Ch3:
+Music_DefeatedWildMon_Ch3::
 	notetype 12, 2, 0
 	rest 6
 	octave 6
@@ -130,7 +130,7 @@ Music_DefeatedWildMon_Ch3:
 	note E_, 1
 	rest 3
 
-Music_DefeatedWildMon_Ch3_branch_1:
+Music_DefeatedWildMon_Ch3_branch_1::
 	callchannel Music_DefeatedWildMon_Ch3_branch_2
 	note D#, 2
 	note C#, 2
@@ -154,7 +154,7 @@ Music_DefeatedWildMon_Ch3_branch_1:
 	note B_, 4
 	loopchannel 0, Music_DefeatedWildMon_Ch3_branch_1
 
-Music_DefeatedWildMon_Ch3_branch_2:
+Music_DefeatedWildMon_Ch3_branch_2::
 	notetype 12, 2, 6
 	octave 3
 	note E_, 2

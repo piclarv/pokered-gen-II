@@ -1,4 +1,4 @@
-Music_WildBattle_Ch1:
+Music_WildBattle_Ch1::
 	tempo 0, 112
 	stereopanning 119
 	vibrato 18, 2, 3
@@ -18,7 +18,7 @@ Music_WildBattle_Ch1:
 	note F#, 1
 	note F_, 1
 
-Music_WildBattle_Ch1_branch_1:
+Music_WildBattle_Ch1_branch_1::
 	notetype 12, 11, 7
 	callchannel Music_WildBattle_Ch1_branch_7
 	octave 4
@@ -202,7 +202,7 @@ Music_WildBattle_Ch1_branch_1:
 	rest 5
 	note C#, 8
 
-Music_WildBattle_Ch1_branch_2:
+Music_WildBattle_Ch1_branch_2::
 	notetype 12, 11, 1
 	octave 3
 	note C_, 1
@@ -211,28 +211,28 @@ Music_WildBattle_Ch1_branch_2:
 	note C#, 1
 	loopchannel 8, Music_WildBattle_Ch1_branch_2
 
-Music_WildBattle_Ch1_branch_3:
+Music_WildBattle_Ch1_branch_3::
 	note C#, 1
 	note F_, 1
 	note E_, 1
 	note D#, 1
 	loopchannel 8, Music_WildBattle_Ch1_branch_3
 
-Music_WildBattle_Ch1_branch_4:
+Music_WildBattle_Ch1_branch_4::
 	note C_, 1
 	note D#, 1
 	note D_, 1
 	note C#, 1
 	loopchannel 16, Music_WildBattle_Ch1_branch_4
 
-Music_WildBattle_Ch1_branch_5:
+Music_WildBattle_Ch1_branch_5::
 	note C#, 1
 	note E_, 1
 	note D#, 1
 	note D_, 1
 	loopchannel 8, Music_WildBattle_Ch1_branch_5
 
-Music_WildBattle_Ch1_branch_6:
+Music_WildBattle_Ch1_branch_6::
 	note C_, 1
 	note D#, 1
 	note D_, 1
@@ -240,7 +240,7 @@ Music_WildBattle_Ch1_branch_6:
 	loopchannel 8, Music_WildBattle_Ch1_branch_6
 	loopchannel 0, Music_WildBattle_Ch1_branch_1
 
-Music_WildBattle_Ch1_branch_7:
+Music_WildBattle_Ch1_branch_7::
 	octave 4
 	note C_, 1
 	rest 5
@@ -264,7 +264,7 @@ Music_WildBattle_Ch1_branch_7:
 	endchannel
 
 
-Music_WildBattle_Ch2:
+Music_WildBattle_Ch2::
 	duty 1
 	vibrato 18, 2, 3
 	notetype 12, 11, 1
@@ -302,7 +302,7 @@ Music_WildBattle_Ch2:
 	note D_, 1
 	note C#, 1
 
-Music_WildBattle_Ch2_branch_1:
+Music_WildBattle_Ch2_branch_1::
 	notetype 12, 11, 7
 	callchannel Music_WildBattle_Ch2_branch_4
 	octave 2
@@ -324,7 +324,7 @@ Music_WildBattle_Ch2_branch_1:
 	note F#, 1
 	notetype 6, 11, 7
 
-Music_WildBattle_Ch2_branch_2:
+Music_WildBattle_Ch2_branch_2::
 	octave 2
 	note C_, 2
 	rest 4
@@ -390,7 +390,7 @@ Music_WildBattle_Ch2_branch_2:
 	note G#, 1
 	notetype 6, 11, 7
 
-Music_WildBattle_Ch2_branch_3:
+Music_WildBattle_Ch2_branch_3::
 	octave 2
 	note C_, 2
 	rest 4
@@ -532,7 +532,7 @@ Music_WildBattle_Ch2_branch_3:
 	rest 2
 	loopchannel 0, Music_WildBattle_Ch2_branch_1
 
-Music_WildBattle_Ch2_branch_4:
+Music_WildBattle_Ch2_branch_4::
 	octave 2
 	note C_, 1
 	rest 2
@@ -599,7 +599,7 @@ Music_WildBattle_Ch2_branch_4:
 	note G_, 2
 	endchannel
 
-Music_WildBattle_Ch2_branch_5:
+Music_WildBattle_Ch2_branch_5::
 	octave 3
 	note G_, 4
 	octave 2
@@ -621,7 +621,7 @@ Music_WildBattle_Ch2_branch_5:
 	rest 2
 	endchannel
 
-Music_WildBattle_Ch2_branch_6:
+Music_WildBattle_Ch2_branch_6::
 	note C_, 2
 	rest 2
 	octave 3
@@ -644,7 +644,7 @@ Music_WildBattle_Ch2_branch_6:
 	endchannel
 
 
-Music_WildBattle_Ch3:
+Music_WildBattle_Ch3::
 	vibrato 20, 2, 3
 	notetype 12, 1, 4
 	octave 3
@@ -696,7 +696,7 @@ Music_WildBattle_Ch3:
 	octave 4
 	note G_, 1
 
-Music_WildBattle_Ch3_branch_1:
+Music_WildBattle_Ch3_branch_1::
 	notetype 12, 1, 4
 	octave 5
 	note G_, 1

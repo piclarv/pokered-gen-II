@@ -1,4 +1,16 @@
 
+text   EQUS "db $00," ; Start writing text.
+next   EQUS "db $4e," ; Move a line down.
+line   EQUS "db $4f," ; Start writing at the bottom line.
+para   EQUS "db $51," ; Start a new paragraph.
+cont   EQUS "db $55," ; Scroll to the next line.
+done   EQUS "db $57"  ; End a text box.
+prompt EQUS "db $58"  ; Prompt the player to end a text box (initiating some other event).
+
+page   EQUS "db $49,"     ; Start a new Pokedex page.
+dex    EQUS "db $5f, $50" ; End a Pokedex entry.
+
+
 ;\1 = X
 ;\2 = Y
 FuncCoord: MACRO
@@ -42,11 +54,17 @@ IMAP: MACRO ; imap mapid_less_than,x-coordinate,y-coordinate,textpointer
 	ENDM
 
 ; tilesets' headers macro
-TSETHEAD: MACRO
-	db BANK(\2)
-	dw \1,\2,\3
-	db \4,\5,\6,\7,\8
+tileset: MACRO
+	db BANK(\2)   ; BANK(GFX)
+	dw \1, \2, \3 ; Block, GFX, Coll
+	db \4, \5, \6 ; counter tiles
+	db \7         ; grass tile
+	db \8         ; permission (indoor, cave, outdoor)
 	ENDM
+
+INDOOR  EQU 0
+CAVE    EQU 1
+OUTDOOR EQU 2
 	
 ; macro for two nibbles
 dn: MACRO

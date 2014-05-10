@@ -1,65 +1,94 @@
 PYTHON := python
+
+.SUFFIXES:
 .SUFFIXES: .asm .tx .o .gbc
-.PHONY: all clean red blue compare
+.PHONY: all clean red blue compare pngs
+.PRECIOUS: %.2bpp
 .SECONDEXPANSION:
 
+POKEMONTOOLS := extras/pokemontools
+GFX          := $(PYTHON) $(POKEMONTOOLS)/gfx.py
+PIC          := $(PYTHON) $(POKEMONTOOLS)/pic.py
+INCLUDES     := $(PYTHON) $(POKEMONTOOLS)/scan_includes.py
+PREPROCESS   := $(PYTHON) prequeue.py
 
 TEXTQUEUE :=
 
-RED_OBJS  := pokered.o
-BLUE_OBJS := pokeblue.o
+RED_OBJS  := \
+pokered.o \
+audio_red.o \
+wram.o \
+text.o
+
+BLUE_OBJS := \
+pokeblue.o \
+audio_blue.o \
+wram.o \
+text.o
 
 OBJS := $(RED_OBJS) $(BLUE_OBJS)
+OBJS := $(sort $(OBJS))
 
 ROMS := pokered.gbc pokeblue.gbc
 
-# generate dependencies for each object
-$(shell $(foreach obj, $(OBJS), \
-	$(eval $(obj:.o=)_DEPENDENCIES := $(shell $(PYTHON) extras/pokemontools/scan_includes.py $(obj:.o=.asm) | sed s/globals.asm//g)) \
-))
-$(shell $(foreach obj, $(OBJS), \
-	$(eval ALL_DEPENDENCIES += $($(obj:.o=)_DEPENDENCIES)) \
-))
+# object dependencies
+$(shell $(foreach obj, $(OBJS), $(eval $(obj:.o=)_DEPENDENCIES := $(shell $(INCLUDES) $(obj:.o=.asm)))))
 
 all: $(ROMS)
 red:  pokered.gbc
 blue: pokeblue.gbc
-compare: baserom.gbc pokered.gbc
-	cmp $^
-
-redrle: extras/redtools/redrle.c
-	${CC} -o $@ $>
-
+compare:
+	@md5sum -c --quiet roms.md5
 clean:
 	rm -f $(ROMS)
 	rm -f $(OBJS)
-	rm -f globals.asm
-	@echo "removing *.tx" && find . -iname '*.tx' -exec rm {} +
+	find .   -iname '*.tx'      -exec rm {} +
+	find gfx -iname '*.[12]bpp' -exec rm {} +
+	find pic -iname '*.pic'     -exec rm {} +
+	find pic -iname '*.2bpp'    -exec rm {} +
 	rm -f redrle
 
 
-baserom.gbc: ;
-	@echo "Wait! Need baserom.gbc first. Check README and INSTALL for details." && false
+redrle: extras/redtools/redrle.c
+	${CC} -o $@ $<
+
 
 %.asm: ;
 .asm.tx:
-	$(eval TEXTQUEUE := $(TEXTQUEUE) $<)
+	$(eval TEXTQUEUE += $<)
 	@rm -f $@
 
-globals.asm: $(ALL_DEPENDENCIES:.asm=.tx) $(OBJS:.o=.tx)
-	@touch $@
-	@$(PYTHON) prequeue.py $(TEXTQUEUE)
-globals.tx: globals.asm
-	@cp $< $@
-
 $(OBJS): $$*.tx $$(patsubst %.asm, %.tx, $$($$*_DEPENDENCIES))
+	@$(PREPROCESS) $(TEXTQUEUE)
+	@$(eval TEXTQUEUE :=)
+	@$(GFX) 2bpp $(2BPPQUEUE)
+	@$(eval 2BPPQUEUE :=)
+	@$(GFX) 1bpp $(1BPPQUEUE)
+	@$(eval 1BPPQUEUE :=)
+	@$(PIC) compress $(PICQUEUE)
+	@$(eval PICQUEUE  :=)
 	rgbasm -o $@ $*.tx
 
-pokered.gbc: globals.tx $(RED_OBJS)
-	rgblink -n $*.sym -m $*.map -o $@ $(RED_OBJS)
-	rgbfix -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED" $@
 
-pokeblue.gbc: globals.tx $(BLUE_OBJS)
-	rgblink -n $*.sym -m $*.map -o $@ $(BLUE_OBJS)
-	rgbfix -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE" $@
+OPTIONS = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03
+
+pokered.gbc: $(RED_OBJS)
+	rgblink -n $*.sym -m $*.map -o $@ $^
+	rgbfix $(OPTIONS) -t "POKEMON RED" $@
+
+pokeblue.gbc: $(BLUE_OBJS)
+	rgblink -n $*.sym -m $*.map -o $@ $^
+	rgbfix $(OPTIONS) -t "POKEMON BLUE" $@
+
+
+%.2bpp: %.png
+	$(eval 2BPPQUEUE += $<)
+	@rm -f $@
+%.1bpp: %.png
+	$(eval 1BPPQUEUE += $<)
+	@rm -f $@
+%.pic: %.2bpp
+	$(eval PICQUEUE  += $<)
+	@rm -f $@
+
 

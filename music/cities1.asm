@@ -1,11 +1,11 @@
-Music_Cities1_branch_aa6f:
+Music_Cities1_branch_aa6f::
 	tempo 0, 232
 	loopchannel 0, Music_Cities1_branch_aa79
 
-Music_Cities1_Ch1:
+Music_Cities1_Ch1::
 	tempo 0, 157
 
-Music_Cities1_branch_aa79:
+Music_Cities1_branch_aa79::
 	stereopanning 119
 	duty 2
 	vibrato 18, 3, 4
@@ -41,7 +41,7 @@ Music_Cities1_branch_aa79:
 	note G_, 8
 	rest 4
 
-Music_Cities1_Ch1_branch_1:
+Music_Cities1_Ch1_branch_1::
 	callchannel Music_Cities1_Ch1_branch_2
 	rest 4
 	callchannel Music_Cities1_Ch1_branch_2
@@ -170,7 +170,7 @@ Music_Cities1_Ch1_branch_1:
 	note A#, 4
 	loopchannel 0, Music_Cities1_Ch1_branch_1
 
-Music_Cities1_Ch1_branch_2:
+Music_Cities1_Ch1_branch_2::
 	octave 3
 	note A_, 1
 	rest 3
@@ -246,7 +246,7 @@ Music_Cities1_Ch1_branch_2:
 	note G_, 8
 	endchannel
 
-Music_Cities1_Ch1_branch_3:
+Music_Cities1_Ch1_branch_3::
 	octave 3
 	note B_, 2
 	note D_, 2
@@ -271,7 +271,7 @@ Music_Cities1_Ch1_branch_3:
 	endchannel
 
 
-Music_Cities1_Ch2:
+Music_Cities1_Ch2::
 	vibrato 16, 4, 6
 	duty 1
 	notetype 12, 11, 7
@@ -305,7 +305,7 @@ Music_Cities1_Ch2:
 	note E_, 8
 	rest 4
 
-Music_Cities1_Ch2_branch_1:
+Music_Cities1_Ch2_branch_1::
 	callchannel Music_Cities1_Ch2_branch_2
 	rest 4
 	callchannel Music_Cities1_Ch2_branch_2
@@ -404,7 +404,7 @@ Music_Cities1_Ch2_branch_1:
 	note A_, 4
 	loopchannel 0, Music_Cities1_Ch2_branch_1
 
-Music_Cities1_Ch2_branch_2:
+Music_Cities1_Ch2_branch_2::
 	octave 2
 	note D_, 4
 	rest 2
@@ -471,7 +471,7 @@ Music_Cities1_Ch2_branch_2:
 	note E_, 8
 	endchannel
 
-Music_Cities1_Ch2_branch_3:
+Music_Cities1_Ch2_branch_3::
 	note G_, 4
 	rest 2
 	octave 3
@@ -483,7 +483,7 @@ Music_Cities1_Ch2_branch_3:
 	note F#, 2
 	endchannel
 
-Music_Cities1_Ch2_branch_4:
+Music_Cities1_Ch2_branch_4::
 	note F#, 4
 	rest 2
 	octave 3
@@ -495,7 +495,7 @@ Music_Cities1_Ch2_branch_4:
 	note F_, 2
 	endchannel
 
-Music_Cities1_Ch2_branch_5:
+Music_Cities1_Ch2_branch_5::
 	octave 2
 	note E_, 4
 	rest 2
@@ -506,7 +506,7 @@ Music_Cities1_Ch2_branch_5:
 	note D#, 2
 	endchannel
 
-Music_Cities1_Ch3:
+Music_Cities1_Ch3::
 	vibrato 18, 2, 4
 	notetype 12, 1, 3
 	octave 4
@@ -542,7 +542,7 @@ Music_Cities1_Ch3:
 	note F#, 2
 	note G_, 2
 
-Music_Cities1_Ch3_branch_1:
+Music_Cities1_Ch3_branch_1::
 	notetype 12, 1, 3
 	callchannel Music_Cities1_Ch3_branch_2
 	octave 5
@@ -625,7 +625,7 @@ Music_Cities1_Ch3_branch_1:
 	note E_, 4
 	loopchannel 0, Music_Cities1_Ch3_branch_1
 
-Music_Cities1_Ch3_branch_2:
+Music_Cities1_Ch3_branch_2::
 	octave 5
 	note A_, 2
 	rest 2
@@ -688,13 +688,13 @@ Music_Cities1_Ch3_branch_2:
 	note D_, 8
 	endchannel
 
-Music_Cities1_Ch4:
+Music_Cities1_Ch4::
 	dspeed 12
 	endchannel
 	callchannel Music_Cities1_Ch4_branch_2
 	callchannel Music_Cities1_Ch4_branch_3
 
-Music_Cities1_Ch4_branch_1:
+Music_Cities1_Ch4_branch_1::
 	callchannel Music_Cities1_Ch4_branch_2
 	callchannel Music_Cities1_Ch4_branch_2
 	callchannel Music_Cities1_Ch4_branch_2
@@ -713,7 +713,7 @@ Music_Cities1_Ch4_branch_1:
 	callchannel Music_Cities1_Ch4_branch_4
 	loopchannel 0, Music_Cities1_Ch4_branch_1
 
-Music_Cities1_Ch4_branch_2:
+Music_Cities1_Ch4_branch_2::
 	note E_, 2
 	note E_, 2
 	note D_, 2
@@ -730,7 +730,7 @@ Music_Cities1_Ch4_branch_2:
 	note F#, 2
 	endchannel
 
-Music_Cities1_Ch4_branch_3:
+Music_Cities1_Ch4_branch_3::
 	note E_, 2
 	note E_, 2
 	note D_, 2
@@ -747,7 +747,7 @@ Music_Cities1_Ch4_branch_3:
 	note A#, 2
 	endchannel
 
-Music_Cities1_Ch4_branch_4:
+Music_Cities1_Ch4_branch_4::
 	note D#, 2
 	note F#, 2
 	note D_, 2
@@ -765,7 +765,7 @@ Music_Cities1_Ch4_branch_4:
 	note D#, 2
 	endchannel
 
-Music_Cities1_Ch4_branch_5:
+Music_Cities1_Ch4_branch_5::
 	note D#, 2
 	note F#, 2
 	note D_, 2
